@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+
+@font-face {
+    font-family: helveticalt-condensed;
+    src: url(../fonts/Helvetica\ LT\ Condensed\ Regular.ttf);
+}
+
+@font-face {
+    font-family: helveticaltstd-bold;
+    src: url(../fonts/Helvetica\ LT\ Std\ Bold\ Condensed.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: helveticaltstd-roman;
+    src: url(../fonts/Helvetica\ LT\ Std\ Roman.otf);
+}
+
+@font-face {
+    font-family: helveticaltstd-light;
+    src: url(../fonts/Helvetica\ LT\ Std\ Light.otf);
+}
+
+@media (max-width: 767px) {
+
+    .wrap {
+        width: 98%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header__burger {
+        display: flex;
+        margin-left: auto;
+        position: relative;
+        top: 1px;
+        width: 30px;
+        height: 18px;
+    }
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        background-color: var(--clr-nav-text);
+    }
+    .header__burger::before {
+        top: 0;        
+    }
+    .header__burger::after {
+        bottom: 0;        
+    }
+
+    .header__burger span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 8px;
+        background-color: var(--clr-nav-text);
+    }
+
+    .nav__list {
+        position: fixed;
+        display: none;
+    }
+   
+}
